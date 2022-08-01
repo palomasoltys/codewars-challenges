@@ -6,15 +6,6 @@
 
 def persistence(numbers):
 
-    # if len(n) == 1, return 0
-    # convert to string
-    # create a count = 0
-    # while len(n) > 1
-    # split the numbers
-    # multiply the numbers within each other
-    # increase count by 1
-    # return count
-
     if len(str(numbers)) == 1:
         return 0
 
