@@ -46,8 +46,8 @@ def is_balanced(string):
     return stack.is_empty()
 
 
-# print(is_balanced("({a+b})"))  # --> True
-# print(is_balanced("))((a+b}{"))  # --> False
-# print(is_balanced("((a+b))"))  # --> True
+print(is_balanced("({a+b})"))  # --> True
+print(is_balanced("))((a+b}{"))  # --> False
+print(is_balanced("((a+b))"))  # --> True
 print(is_balanced("))"))  # --> False
 print(is_balanced("[a+b]*(x+2y)*{gg+kk}"))  # --> True
