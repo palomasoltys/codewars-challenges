@@ -23,6 +23,18 @@ def two_sum(numbers, target):
     return index[:2]
 
 
-print(two_sum([1, 2, 3], 4))  # -> [0,2]
-print(two_sum([2, 2, 3], 4))  # ->[0,1]
-print(two_sum([1234, 5678, 9012], 14690))  # -> [1,2]
+# print(two_sum([1, 2, 3], 4))  # -> [0,2]
+# print(two_sum([2, 2, 3], 4))  # ->[0,1]
+# print(two_sum([1234, 5678, 9012], 14690))  # -> [1,2]
+
+
+def two_sum_optimized(nums, target):
+    hashmap = {}
+    for i in range(len(nums)):
+        num_to_sum = target - nums[i]
+        if num_to_sum in hashmap:
+            return [hashmap[num_to_sum], i]
+        hashmap[nums[i]] = hashmap.get(nums[i], i)
+
+
+print(two_sum_optimized([2, 7, 11, 15], 9))  # -> [0,1]
